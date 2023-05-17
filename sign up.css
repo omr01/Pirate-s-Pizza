@@ -1,0 +1,285 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navigation bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#navbar::before{
+  content: "";
+  background: black;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* navigation bar img and logo */
+#logo{
+  margin: 2px 4px;
+}
+#logo img{
+  margin: 2px 10px;
+  width:  100px;
+}
+/* navigation bar list styling */
+ul{
+  display: flex;
+}
+ul li{
+  list-style: none;
+  font-size: 1.5rem;
+}
+ul li a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+ul li a:hover{
+  color: rgb(255, 255, 255);
+  background: rgb(245, 131, 0);
+}
+footer{
+  background-color: rgb(53, 51, 51);
+}
+#clinet{
+display: flex;
+}
+.client-item li a:hover{
+  color: none;
+  background-color: none;
+}
+.client-item p{
+  color: gray;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 1px  60px;
+}
+.pics{
+  padding: 10px 30px;
+}
+.pics img{
+  padding: 0px .4px;
+  cursor: pointer;
+}
+.footp{
+  background-color: rgb(29, 29, 29);
+  padding: 20px 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: antiquewhite;
+}
+footer img{
+  cursor: pointer;
+}
+.frame{
+  max-width: 530px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.frame .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: grey;
+  text-align: center;
+}
+
+.frame .form{
+  width: 100%;
+}
+
+.frame .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.frame .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.frame .form .inputfield .input,
+.frame .form .inputfield .textarea{
+  width: 100%;
+border: 1px solid #d5dbd9;
+font-size: 15px;
+padding: 8px 10px;
+border-radius: 3px;
+}
+
+.frame .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.frame .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.frame .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.frame .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.frame .form .inputfield .input:focus,
+.frame .form .inputfield .textarea:focus,
+.frame .form .inputfield .custom_select select:focus{
+  border: 1px solid grey;
+}
+
+.frame .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.frame .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.frame .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.frame .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid gray;
+  display: block;
+  position: relative;
+}
+.frame .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.frame .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: grey;
+}
+
+.frame .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+.dont{
+  font-size: 0.8rem;
+}
+.frame .form .inputfield .btn{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 640%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  rgb(99, 173, 14);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin-left: 10px;
+}
+
+.frame .form .inputfield .btn:hover{
+  background: #6dd418;
+}
+footer{
+  background-color: black;
+}
+p{
+  color: rgb(255, 255, 255);
+}
+
+pre{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 160%;
+color: rgb(255, 255, 255);
+}
+
+ul li{
+list-style: none;
+font-size: 1.5rem;
+}
+#home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+justify-items: center;
+align-items: center;
+}
+
+#home::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+background-color: rgb(218, 170, 50);
+opacity: 0.1;
+}
+#home p{
+font: 1em sans-serif;
+color: rgb(34, 57, 43);
+font-size: 2rem;
+}
+.btn{
+font-size: 1.5rem;
+border-radius: 10px;
+padding: 6px 25px;
+border: 2px solid rgb(0, 0, 0);
+background: rgb(250, 88, 88);
+cursor: pointer;
+}
+
+/* untility classes*/
+.h-primary{
+padding: 13px;
+font-size: 3.5rem;
+}
+.pics img{
+  padding: 0% .4%;
+  cursor: pointer;
+}
